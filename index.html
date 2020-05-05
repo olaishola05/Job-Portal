@@ -10,7 +10,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="style.css" />
-        <title>Jobs</title>
+        <title>krafts.com</title>
     </head>
     <header>
         <nav class="navbar">
@@ -32,10 +32,13 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-black ml-2" href="#">Hire Talent</a>
+                    <a class="nav-link" href="#">Create your CV</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-job" href="#">Find Job</a>
+                    <a class="nav-link btn btn-black navHover ml-2" href="#">Hire Talent</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-job navHover" href="#">Find Job</a>
                 </li>
             </ul>
         </nav>
@@ -43,10 +46,62 @@
     <body>
         <div class="container-fluid">
             <div class="container">
-                <h1>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nesciunt sit vitae quos officia voluptatibus ut! Facilis atque nesciunt, quas unde fugiat vel perferendis dolorem,
-                    explicabo soluta quae minus pariatur.
-                </h1>
+                <div class="background">
+                    <div class="overlay">
+                        <div class="content">
+                            <h1>Our Talent.</h1>
+                            <h1>Your Workplace.</h1>
+                            <p>Connect with your dream Company in a few clicks</p>
+                            <div class="overlayBtn">
+                                <button class="btn btn-white navHover">Hire Talent</button>
+                                <button class="btn btn-job navHover">Find Job</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="mt-5 section">
+                    <div class="search">
+                        <div class="jobType">
+                            <h6>What</h6>
+                            <pre>Job title, keywords, or company</pre>
+                            <input class="input-group rounded" type="text" placeholder="Job title" />
+                        </div>
+                        <div class="ml-5 location">
+                            <h6>Where</h6>
+                            <pre>City, state, or zip code</pre>
+                            <input class="input-group rounded" type="text" placeholder="location.." />
+                        </div>
+                        <button class="btn btn-job navHover" id="searchBtn">Find Job</button>
+                    </div>
+                    <div class="input-group mt-3 filter">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Job Type</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+
+                            <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Location</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+
+                            <div class="input-group-prepend">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
             </div>
         </div>
 
