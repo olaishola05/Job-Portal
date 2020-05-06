@@ -5,6 +5,7 @@ ul li a {
 ul li a:hover {
     color: white;
     background-color: black;
+    border-radius: 5px;
 }
 
 .btn-job {
@@ -58,7 +59,14 @@ ul li a:hover {
 .content h1 p {
     color: white;
 }
+pre {
+    color: gray;
+}
 
+.sections {
+    margin-left: 20%;
+    margin-right: 20%;
+}
 .search {
     display: flex;
     padding: 10px;
@@ -67,11 +75,6 @@ ul li a:hover {
 #searchBtn {
     margin-top: 60px;
     margin-left: 30px;
-}
-
-.filter {
-    display: flex;
-    justify-content: ;
 }
 
 input {
