@@ -63,10 +63,6 @@ pre {
     color: gray;
 }
 
-.sections {
-    margin-left: 20%;
-    margin-right: 20%;
-}
 .search {
     display: flex;
     padding: 10px;
@@ -79,4 +75,27 @@ pre {
 
 input {
     padding: 5px;
+}
+
+#upload {
+    display: block;
+    width: 25%;
+    margin: auto;
+}
+
+#upload h6 {
+    margin-left: 10px;
+}
+.btn-upload {
+    background-color: black;
+    margin-left: 10px;
+    color: white;
+    height: 40px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+footer {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    padding-left: 30px;
 }

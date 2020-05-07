@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar">
             <a class="navbar-brand" href="#">
-                <img src="/img/kraft.png" width="150" height="50" alt="" />
+                <img src="/img/kraft.png" width="150" height="50" alt="brand-logo" />
             </a>
 
             <ul class="nav justify-content-center list">
@@ -38,7 +38,7 @@
                     <a class="nav-link btn btn-black navHover ml-2" href="#">Hire Talent</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn btn-job navHover" href="#">Find Job</a>
+                    <a class="nav-link btn btn-job navHover" href="#jobs">Find Job</a>
                 </li>
             </ul>
         </nav>
@@ -54,7 +54,7 @@
                             <p>Hire the best candidate from our pool of talents in just a few clicks</p>
                             <div class="overlayBtn">
                                 <button class="btn btn-white navHover">Hire Talent</button>
-                                <button class="btn btn-job navHover">Find Job</button>
+                                <a href="#jobs"><button class="btn btn-job navHover">Find Job</button></a>
                             </div>
                         </div>
                     </div>
@@ -65,20 +65,29 @@
                         <div class="jobType">
                             <h6>What</h6>
                             <pre>Job title, keywords, or company</pre>
-                            <input class="input-group rounded" type="text" placeholder="Job title" />
+                            <input class="input-group rounded" id="jobs" type="text" placeholder="Job title" />
                         </div>
                         <div class="ml-5 location">
                             <h6>Where</h6>
                             <pre>City, state, or zip code</pre>
-                            <input class="input-group rounded" type="text" placeholder="location.." />
+                            <input class="input-group rounded" id="location" type="text" placeholder="location.." />
                         </div>
                         <button class="btn btn-job navHover" id="searchBtn">Find Job</button>
                     </div>
                 </section>
                 <hr />
+                <div class="jobs"></div>
             </div>
         </div>
+        <footer>
+            <small>&copy;Copyright 2020, Krafts. All Rights Reserved</small>
 
+            <div id="upload">
+                <h6>Easily apply to Jobs</h6>
+                <button type="button" class="btn btn-upload navHover">Upload your CV</button>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
