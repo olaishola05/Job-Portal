@@ -77,6 +77,26 @@ input {
     padding: 5px;
 }
 
+.temJob {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.btn-apply {
+    background-color: white;
+    color: black;
+    height: 40px;
+    width: 100px;
+    border-radius: 25px;
+    border: 1px solid purple;
+}
+.btn-apply:hover {
+    background-color: purple;
+    color: white;
+}
 #upload {
     display: block;
     width: 25%;
