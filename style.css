@@ -68,6 +68,10 @@ pre {
     padding: 10px;
 }
 
+.location {
+    margin-left: 50px;
+}
+
 #searchBtn {
     margin-top: 60px;
     margin-left: 30px;
@@ -118,4 +122,87 @@ input {
 footer {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     padding-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .background {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .background .content {
+        padding-left: 10px;
+    }
+    .background .content h1 {
+        font-size: 2rem;
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .overlay button {
+        width: 40%;
+        padding: 0;
+    }
+
+    .overlay .btn-white {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .search {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .search .location {
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .search #searchBtn {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .defaultJob {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .defaultJob h3 {
+        text-align: center;
+    }
+
+    .defaultJob .temJob {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer #upload {
+        text-align: center;
+        width: 200px;
+        margin-bottom: 0;
+    }
+    small {
+        text-align: center;
+    }
 }

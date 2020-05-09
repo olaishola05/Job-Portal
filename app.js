@@ -17,6 +17,14 @@ function inputValidate() {
     }
 }
 
+// function myFunction() {
+//     let topNav = document.getElementById("topnav");
+//     if (topNav.className === "nav") {
+//         topNav.className += " responsive";
+//     } else {
+//         topNav.className = "nav";
+//     }
+// }
 // function getJob() {
 //     axios
 //         .get("https.com?_limit=20")

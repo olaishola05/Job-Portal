@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -13,38 +14,51 @@
         <title>krafts.com</title>
     </head>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="topnav">
             <a class="navbar-brand" href="#">
                 <img src="/img/kraft.png" width="150" height="50" alt="brand-logo" />
             </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul class="nav justify-content-center list">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" id="login" href="#">Sign In</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Create your CV</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-black navHover ml-2" href="#">Hire Talent</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn btn-job navHover" href="#jobs">Find Job</a>
-                </li>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" id="login" href="#">Sign In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create your CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-black navHover ml-2" href="#">Hire Talent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-job navHover" href="#jobs">Find Job</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <body>
@@ -54,7 +68,7 @@
                     <div class="overlay">
                         <div class="content">
                             <h1>Our Talent.</h1>
-                            <h1>Your Workplace.</h1>
+                            <h2>Your Workplace.</h2>
                             <p>Hire the best candidate from our pool of talents in just a few clicks</p>
                             <div class="overlayBtn">
                                 <button class="btn btn-white navHover">Hire Talent</button>
@@ -71,7 +85,7 @@
                             <pre>Job title, keywords, or company</pre>
                             <input class="input-group rounded" id="jobs" type="text" placeholder="Job title" />
                         </div>
-                        <div class="ml-5 location">
+                        <div class="location">
                             <h6>Where</h6>
                             <pre>City, state, or zip code</pre>
                             <input class="input-group rounded" id="location" type="text" placeholder="location.." />
@@ -80,7 +94,7 @@
                     </div>
                 </section>
                 <hr />
-                <div class="jobs">
+                <div class="container jobs">
                     <div class="defaultJob">
                         <h3 class="text-center mt-5">AVAILABLE <strong>OPPORTUNITIES</strong></h3>
                         <div class="card temJob">
