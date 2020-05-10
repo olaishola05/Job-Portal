@@ -80,14 +80,39 @@ pre {
 input {
     padding: 5px;
 }
-
+/* .card {
+    width: 100%;
+    height: 100px;
+    margin-left: 0;
+} */
+.jobs {
+    border: 1px solid red;
+}
 .temJob {
+    width: 90%;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
     border-radius: 10px;
+    border: 1px solid teal;
 }
+.jobDetail {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.jobState {
+    margin-top: 30px;
+    margin-right: 40px;
+}
+/* .defaultJob {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} */
 
 .btn-apply {
     background-color: white;
@@ -96,6 +121,8 @@ input {
     width: 100px;
     border-radius: 25px;
     border: 1px solid purple;
+    margin-right: 40px;
+    margin-top: 30px;
 }
 .btn-apply:hover {
     background-color: purple;
@@ -187,7 +214,13 @@ footer {
     }
 
     .defaultJob .temJob {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .defaultJob .temJob .jobDetail {
+        display: flex;
     }
 }
 
