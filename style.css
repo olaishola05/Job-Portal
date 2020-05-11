@@ -80,23 +80,23 @@ pre {
 input {
     padding: 5px;
 }
-/* .card {
-    width: 100%;
-    height: 100px;
-    margin-left: 0;
-} */
 .jobs {
-    border: 1px solid red;
+    width: 100%;
+    height: 100%;
 }
+/* .defaultJob {
+    border: 1px solid black;
+    border-radius: 10px;
+} */
 .temJob {
-    width: 90%;
+    width: 100%;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
     border-radius: 10px;
-    border: 1px solid teal;
+    border: 1px solid gray;
 }
 .jobDetail {
     display: flex;
@@ -108,11 +108,6 @@ input {
     margin-top: 30px;
     margin-right: 40px;
 }
-/* .defaultJob {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-} */
 
 .btn-apply {
     background-color: white;
@@ -121,7 +116,7 @@ input {
     width: 100px;
     border-radius: 25px;
     border: 1px solid purple;
-    margin-right: 40px;
+    margin-right: 70px;
     margin-top: 30px;
 }
 .btn-apply:hover {
@@ -144,6 +139,52 @@ input {
     height: 40px;
     width: 150px;
     margin-bottom: 30px;
+}
+
+.social {
+    display: block;
+    width: 25%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3b5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55acee;
+    color: white;
+}
+
+.fa-instagram {
+    background: #e1306c;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
 }
 
 footer {
@@ -204,6 +245,7 @@ footer {
 
 @media screen and (max-width: 600px) {
     .defaultJob {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -217,10 +259,21 @@ footer {
         display: flex;
         flex-direction: column;
         width: 95%;
+        height: 150px;
     }
 
-    .defaultJob .temJob .jobDetail {
-        display: flex;
+    .defaultJob .temJob .jobDetail p {
+        font-size: 12px;
+        margin-top: 0;
+    }
+    .defaultJob .temJob .jobDetail h6 {
+        font-size: 15px;
+    }
+
+    .defaultJob .temJob .btn-apply {
+        margin-top: 0;
+        margin-bottom: 15px;
+        margin-left: 10px;
     }
 }
 
@@ -237,5 +290,11 @@ footer {
     }
     small {
         text-align: center;
+    }
+
+    .social {
+        width: 100%;
+        margin-left: 50px;
+        margin-bottom: 10px;
     }
 }
