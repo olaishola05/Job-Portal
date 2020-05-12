@@ -290,6 +290,7 @@ footer {
     }
     small {
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .social {

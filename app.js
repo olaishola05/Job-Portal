@@ -1,19 +1,15 @@
-function LoginForm() {
-    let loginBtn = document.getElementById("login");
-    alert("you clicked me");
-}
+function loginForm() {
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
 
-function inputValidate() {
-    let jobType = document.getElementById("jobs").value;
-    let location = document.getElementById("location").value;
-    let searchBtn = document.querySelector("#searchBtn");
+    if (email == null || email == Number || email == "") {
+        alert("pls fill in the required info");
+        return false;
+    }
 
-    if (jobType === null || jobType === Number) {
-        if (location === null || location === Number || location.length < 10) {
-            searchBtn.disabled = true;
-        }
-    } else {
-        searchBtn.disabled = false;
+    if (password.length < 6) {
+        alert("pls provide a  password that match");
+        return false;
     }
 }
 
@@ -37,4 +33,4 @@ function inputValidate() {
 // }
 
 // document.getElementById("searchBtn").addEventListener("click", getJob);
-document.getElementById("login").addEventListener("click", LoginForm);
+document.getElementById("submit").addEventListener("click", loginForm);
