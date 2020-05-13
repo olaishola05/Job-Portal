@@ -13,24 +13,4 @@ function loginForm() {
     }
 }
 
-// function myFunction() {
-//     let topNav = document.getElementById("topnav");
-//     if (topNav.className === "nav") {
-//         topNav.className += " responsive";
-//     } else {
-//         topNav.className = "nav";
-//     }
-// }
-// function getJob() {
-//     axios
-//         .get("https.com?_limit=20")
-//         .then((response) => {
-//             console.log("response");
-//         })
-//         .catch((err) => {
-//             console.error(err);
-//         });
-// }
-
-// document.getElementById("searchBtn").addEventListener("click", getJob);
 document.getElementById("submit").addEventListener("click", loginForm);
