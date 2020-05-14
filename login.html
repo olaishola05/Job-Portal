@@ -24,14 +24,6 @@
                 width: 150px;
                 display: block;
             }
-            .avatar-containter {
-                text-align: center;
-                margin: 24px 0 12px 0;
-            }
-            img.avatar {
-                border-radius: 50%;
-                border: maroon 1px solid;
-            }
 
             .checked {
                 display: flex;
@@ -45,6 +37,12 @@
                 text-align: center;
             }
 
+            .signUp {
+                display: block;
+                width: 30%;
+                margin-left: 38%;
+            }
+
             @media screen and (max-width: 600px) {
                 .form-container {
                     width: 100%;
@@ -53,6 +51,29 @@
                 .form-container .btn-primary {
                     display: block;
                     width: 100%;
+                }
+
+                .signUp {
+                    display: inline-block;
+                    width: 40%;
+                    margin-left: 95px;
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                .form-container {
+                    width: 100%;
+                    display: block;
+                    margin: auto;
+                }
+
+                .form-container .btn-primary {
+                    display: block;
+                    width: 100%;
+                }
+
+                .signUp {
+                    display: inline-block;
                 }
             }
         </style>
