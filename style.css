@@ -32,6 +32,7 @@ ul li a:hover {
     background: url("./img/job.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 5px;
 }
 
 .overlay {
@@ -145,7 +146,7 @@ input {
     margin-bottom: 10px;
 }
 
-.fa {
+/* .fa {
     padding: 10px;
     font-size: 20px;
     width: 30px;
@@ -182,19 +183,25 @@ input {
 .fa-linkedin {
     background: #007bb5;
     color: white;
-}
+} */
 
 footer {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: Cambria, Cochin, Georgia, Times,
+        "Times New Roman", serif;
     padding-left: 30px;
+}
+
+@media screen and(max-width: 480px) {
+    .nav {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .nav {
         width: 100%;
     }
-}
-@media screen and (max-width: 600px) {
+
     .background {
         width: 100%;
         display: flex;
@@ -208,9 +215,7 @@ footer {
         font-size: 2rem;
         padding-top: 60px;
     }
-}
 
-@media screen and (max-width: 600px) {
     .overlay button {
         width: 40%;
         padding: 0;
@@ -219,9 +224,7 @@ footer {
     .overlay .btn-white {
         width: 45%;
     }
-}
 
-@media screen and (max-width: 600px) {
     .search {
         width: 100%;
         display: flex;
@@ -238,9 +241,7 @@ footer {
         margin-left: 0;
         margin-top: 15px;
     }
-}
 
-@media screen and (max-width: 600px) {
     .defaultJob {
         width: 100%;
         display: flex;
@@ -272,9 +273,7 @@ footer {
         margin-bottom: 15px;
         margin-left: 10px;
     }
-}
 
-@media screen and (max-width: 600px) {
     footer {
         display: flex;
         flex-direction: column-reverse;
