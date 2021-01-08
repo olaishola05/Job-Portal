@@ -32,13 +32,14 @@ ul li a:hover {
     background: url("./img/job.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .overlay {
     width: 100%;
     height: 500px;
     background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 .btn-white {
     background-color: white;
@@ -80,6 +81,7 @@ pre {
 
 input {
     padding: 5px;
+    border: 0.4px solid gray;
 }
 .jobs {
     width: 100%;
@@ -145,45 +147,13 @@ input {
     margin: auto;
     margin-bottom: 10px;
 }
-
-/* .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
+i {
+    color: purple;
 }
 
-.fa:hover {
-    opacity: 0.7;
+i:hover {
+    color: gray;
 }
-
-.fa-facebook {
-    background: #3b5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55acee;
-    color: white;
-}
-
-.fa-instagram {
-    background: #e1306c;
-    color: white;
-}
-
-.fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-} */
 
 footer {
     font-family: Cambria, Cochin, Georgia, Times,
@@ -293,5 +263,76 @@ footer {
         width: 100%;
         margin-left: 50px;
         margin-bottom: 10px;
+    }
+}
+
+/* login page */
+.login {
+    overflow: hidden;
+}
+.form-container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-primary {
+    height: 40px;
+    width: 150px;
+    display: block;
+}
+
+.checked {
+    display: flex;
+    flex-direction: row;
+}
+
+.forgot {
+    margin-left: 100px;
+}
+.para {
+    text-align: center;
+}
+
+.signUp {
+    display: block;
+    width: 30%;
+    margin-left: 38%;
+}
+
+.foot {
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 100%;
+    }
+
+    .form-container .btn-primary {
+        display: block;
+        width: 100%;
+    }
+
+    .signUp {
+        display: inline-block;
+        width: 40%;
+        margin-left: 95px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .form-container {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+    .form-container .btn-primary {
+        display: block;
+        width: 100%;
+    }
+
+    .signUp {
+        display: inline-block;
     }
 }

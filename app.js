@@ -1,3 +1,13 @@
+const job = document.getElementById("jobs").value;
+const jobLocation = document.getElementById("location").value;
+const searchBtn = document.getElementById("searchBtn");
+
+function findJob() {
+    alert(job, jobLocation);
+}
+
+const submitBtn = document.getElementById("submit");
+
 function loginForm() {
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
@@ -13,4 +23,5 @@ function loginForm() {
     }
 }
 
-document.getElementById("submit").addEventListener("click", loginForm);
+searchBtn.addEventListener("click", findJob);
+// submitBtn.addEventListener("click", loginForm);
